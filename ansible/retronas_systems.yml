@@ -110,8 +110,8 @@ system_arcade:
   - { src: "arcade", last: "", mister: "", retropie: "", batocera: "", recalbox: "", retroarch: "", ops2l: "", ps3netsrv: "", fspd: "", emuelec: "arcade", smdb: "", freestation: "" }
   - { src: "mame/hbmame", last: "", mister: "hbmame", retropie: "", batocera: "", recalbox: "", retroarch: "HBMAME", ops2l: "", ps3netsrv: "", fspd: "", emuelec: "", smdb: "", freestation: "" }
   - { src: "mame/mame", last: "", mister: "mame", retropie: "", batocera: "mame", recalbox: "mame", retroarch: "MAME", ops2l: "", ps3netsrv: "", fspd: "", emuelec: "mame", smdb: "", freestation: "mame" }
-  - { src: "finalburn/fba", last: "", mister: "", retropie: "", batocera: "", recalbox: "fba", retroarch: "", ops2l: "", ps3netsrv: "", fspd: "", emuelec: "", smdb: "", freestation: "" }
-  - { src: "finalburn/fbneo", last: "", mister: "", retropie: "", batocera: "fbneo", recalbox: "fbneo", retroarch: "FBNeo - Arcade Games", ops2l: "", ps3netsrv: "", fspd: "", emuelec: "fbneo", smdb: "", freestation: "" }
+  - { src: "finalburn/fba", last: "", mister: "", retropie: "fba", batocera: "", recalbox: "fba", retroarch: "", ops2l: "", ps3netsrv: "", fspd: "", emuelec: "", smdb: "", freestation: "" }
+  - { src: "finalburn/fbneo", last: "", mister: "", retropie: "fbneo", batocera: "fbneo", recalbox: "fbneo", retroarch: "FBNeo - Arcade Games", ops2l: "", ps3netsrv: "", fspd: "", emuelec: "fbneo", smdb: "", freestation: "" }
   - { src: "gaelco", last: "", mister: "", retropie: "", batocera: "gaelco", recalbox: "", retroarch: "", ops2l: "", ps3netsrv: "", fspd: "", emuelec: "", smdb: "", freestation: "" }
 system_atari:
   - { src: "atari/2600", last: "", mister: "Atari2600", retropie: "atari2600", batocera: "atari2600", recalbox: "atari2600", retroarch: "Atari - 2600", ops2l: "", ps3netsrv: "", fspd: "", emuelec: "atari2600", smdb: "Atari 2600 SMDB.txt", freestation: ""  }
