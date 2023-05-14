@@ -6,7 +6,7 @@
   gather_facts: no
 
   vars:
-    - my_name: "RetroPi CIFS"
+    - my_name: "retropie CIFS"
     - my_file: "install_retropie_cifs"
 
     - top_level_paths:

@@ -711,13 +711,13 @@
                 },
                 {
                     "index": "67",
-                    "title": "Samba for RetroPi",
-                    "description": "RetroPi CIFS config", 
-                    "id":"retropi_cifs",
+                    "title": "Samba for RetroPie",
+                    "description": "RetroPie CIFS config", 
+                    "id":"retropie_cifs",
                     "prompt": "",
                     "type": "install",
                     "group":"samba",
-                    "command": "retropi_cifs"
+                    "command": "retropie_cifs"
                 }
             ]
         },
