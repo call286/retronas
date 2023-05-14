@@ -708,6 +708,16 @@
                     "type": "install",
                     "group":"",
                     "command": "ntp"
+                },
+                {
+                    "index": "67",
+                    "title": "Samba for RetroPi",
+                    "description": "RetroPi CIFS config", 
+                    "id":"retropi_cifs",
+                    "prompt": "",
+                    "type": "install",
+                    "group":"samba",
+                    "command": "retropi_cifs"
                 }
             ]
         },
