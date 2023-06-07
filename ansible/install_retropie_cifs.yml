@@ -12,6 +12,11 @@
     - top_level_paths:
         - { name: "roms", enabled: yes, generic: "roms", systems: yes }
         - { name: "BIOS", enabled: yes, generic: "bios", systems: yes }
+        - { name: "retropiemenu", enabled: yes, generic: "retropiemenu", systems: no }
+        - { name: "splashscreens", enabled: yes, generic: "splashscreens", systems: no }
+
+    - retropiemenu_level_paths:
+        - { name: "icons", enabled: yes, generic: "items", systems: no }
 
   tasks:
     - name: "{{ my_name }} - Include systems map"
@@ -37,6 +42,18 @@
         state: directory
         mode: "0775"
       with_items: "{{ top_level_paths }}"
+      when:
+        - item.enabled is true
+      notify: "{{ my_name }} - Install Samba"
+
+    - name: "{{ my_name }} - build retropiemenu level share paths"
+      file:
+        path: "{{ retronas_path }}/retropie/retropiemenu/{{ item.name }}"
+        owner: "{{ retronas_user }}"
+        group: "{{ retronas_group }}"
+        state: directory
+        mode: "0775"
+      with_items: "{{ retropiemenu_level_paths }}"
       when:
         - item.enabled is true
       notify: "{{ my_name }} - Install Samba"
